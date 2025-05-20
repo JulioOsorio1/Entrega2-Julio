@@ -1,0 +1,21 @@
+{
+  "name": "entrega-2",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "node": "^20.19.2",
+    "postman": "^0.2.0",
+    "socket.io": "^4.8.1"
+  },
+  "description": ""
+}

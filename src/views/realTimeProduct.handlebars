@@ -1,0 +1,24 @@
+<h1>Productos en tiempo real</h1>
+
+<ul id="products-list"></ul>
+
+<script>
+    const socket = io();
+
+    const productsList = document.getElementById('products-list');
+
+    function renderProducts(products) {
+        productsList.innerHTML = '';
+        products.forEach(product) {
+            const li = document.createElement('li');
+            li.textContent = `${product.title} - $${product.price}`;
+            productsList.appendChild(li);
+        };
+    }
+    
+    socket.on('products', (products)  {
+        renderProducts(products);
+    });
+
+    <script src="/socket.io/socket.io.js"></script>
+</script>
